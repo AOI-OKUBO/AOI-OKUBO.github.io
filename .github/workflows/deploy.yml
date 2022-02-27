@@ -17,4 +17,4 @@ jobs:
         with:
           build_dir: dist
         env:
-          GITHUB_TOKEN: ${{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}}
+          GITHUB_TOKEN: ${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}
