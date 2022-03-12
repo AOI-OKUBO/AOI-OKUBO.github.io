@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css"> 
+    <script>
+  (function(){
+    var redirect = sessionStorage.redirect;
+    delete sessionStorage.redirect;
+    if (redirect && redirect != location.href) {
+      history.replaceState(null, null, redirect);
+    }
+  })();
+</script>
     <title>ねじ饅頭の活動</title>
 </head>
 <body>
