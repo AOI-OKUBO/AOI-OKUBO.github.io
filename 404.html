@@ -1,4 +1,7 @@
 <script>
-  sessionStorage.redirect = location.href;
+	var ref = document.referrer;
+	if(ref.indexOf('2-5presentation') != -1){
+		window.location.href('/ssh/2-5presentation/')
+	}
 </script>
-<meta http-equiv="refresh" content="0;URL='/'"></meta>
+
